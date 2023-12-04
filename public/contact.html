@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Website::Contact Us</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="m-4">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav">
+            <a href="/" class="nav-item nav-link active">Home</a>
+            <a class="nav-link" href="/about">About Us</a>
+            <a class="nav-link" href="/info">Info</a>
+            <a class="nav-link" href="/contact">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <main class="container">
+    <h1>Contact us</h1>
+    <form method="post" role="form" action="/contact">
+      <div class="form-group">
+        <label for="author">Enter your name: </label>
+        <input type="text" class="form-control" id="author" name="author" />
+      </div>
+      <div class="form-group">
+        <label for="subject">Subject: </label>
+        <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter a subject line" required>
+      </div>
+      <div class="form-group">
+        <label for="contents">Entry text</label>
+        <textarea class="form-control" id="contents" name="contents" placeholder="Enter your message here: "
+          required> </textarea>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Post entry" class="btn btn-primary">
+      </div>
+    </form>
+  </main>
+  <script src="/js/jquery.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+</body>
+
+</html>
